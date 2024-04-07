@@ -1,4 +1,4 @@
-﻿namespace SmartId.Authentication.Domain.Settings;
+﻿namespace IdentityProvider.Domain.Settings;
 
 public sealed class SmartIdSettings
 {

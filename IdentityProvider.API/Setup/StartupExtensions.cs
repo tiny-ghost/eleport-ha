@@ -1,6 +1,5 @@
-﻿
-using SmartId.Authentication.Application.Service;
-using SmartId.Authentication.Domain.Settings;
+﻿using IdentityProvider.Application.Service;
+using IdentityProvider.Domain.Settings;
 
 namespace SmartId.Authentication.Setup;
 
@@ -22,6 +21,6 @@ public static class StartupExtensions
 	
 	public static void AddServices(this IServiceCollection services)
 	{
-		services.AddTransient<SmartIdAuthenticationService>();
+		services.AddTransient<ISmartIdAuthenticationService, SmartIdAuthenticationService>();
 	}
 }

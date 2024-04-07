@@ -4,6 +4,7 @@
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>SmartId.Authentication</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -18,6 +19,11 @@
       <Content Update="appsettings.Production.json">
         <DependentUpon>appsettings.json</DependentUpon>
       </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\IdentityProvider.Application\IdentityProvider.Application.csproj" />
+      <ProjectReference Include="..\IdentityProvider.Domain\IdentityProvider.Domain.csproj" />
     </ItemGroup>
 
 </Project>
